@@ -12,11 +12,12 @@ interest, principal amortization, and remaining balance over the life of a loan.
 - `Python 3.11+`
 - `pandas`
 - `numpy`
+- `matplotlib`
 
 ## 🧪 Example and Visualization
 The `test.py` script demonstrates how to use the `LoanAmortization` class with a sample loan and includes a visualization of interest vs. amortization over time.
 
-## 🚀 Usage
+### 🚀 Usage
 ```python
 from amortization_table import LoanAmortization
 
@@ -36,7 +37,7 @@ amort_total = table['Amortization'].sum()
 print(f"The sum of the amortization column is: ${amort_total:.2f}")
 ```
 
-## 📈 Visualization
+### 📈 Visualization
 The script plots interest vs. amortization across all periods using `Matplotlib`:
 - Blue line: Interest per period
 - Red line: Principal amortization per period
