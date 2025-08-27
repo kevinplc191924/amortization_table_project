@@ -13,20 +13,33 @@ interest, principal amortization, and remaining balance over the life of a loan.
 - `pandas`
 - `numpy`
 
+## 🧪 Example and Visualization
+The `test.py` script demonstrates how to use the `LoanAmortization` class with a sample loan and includes a visualization of interest vs. amortization over time.
+
 ## 🚀 Usage
 ```python
-from amortization_table import LoanAmortization
-
 loan = LoanAmortization(
-    loan_amount=100000,
-    annual_rate=0.05,
-    periods_per_year=12,
-    years=30
+    loan_amount=5000,
+    annual_rate=0.1275,
+    periods_per_year=2,
+    years=5
 )
 
+# Current amortization
+amort_total = table['Amortization'].sum()
+print(f"The sum of the amortization column is: ${amort_total:.2f}")
+
+# Get the table
 table = loan.get_table()
-print(table.head())
+print(table)
 ```
+
+## 📈 Visualization
+The script plots interest vs. amortization across all periods using `Matplotlib`:
+- Blue line: Interest per period
+- Red line: Principal amortization per period
+- Dual-axis plot for clear comparison
+- This helps users visually understand how interest declines and principal repayment accelerates over time.
 
 ## 🧠 Behind the Scenes
 The class uses the formula for fixed-rate loan payments and iteratively computes interest and principal breakdowns for
