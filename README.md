@@ -38,7 +38,7 @@ print(f"The sum of the amortization column is: ${amort_total:.2f}")
 ```
 
 ### 📈 Visualization
-The script plots interest vs. amortization across all periods using `Matplotlib`:
+The script plots interest vs. amortization across all periods using `Matplotlib`. The source code is in the `test.py` file.
 - Blue line: Interest per period
 - Red line: Principal amortization per period
 - Dual-axis plot for clear comparison
@@ -56,3 +56,11 @@ The script plots interest vs. amortization across all periods using `Matplotlib`
 ## 🧠 Behind the Scenes
 The class uses the formula for fixed-rate loan payments and iteratively computes interest and principal breakdowns for
 each period. It supports both end-of-period and beginning-of-period payments.
+
+---
+
+## 🛠️ Optional Enhancements
+The checklist will be updated as soon as the feature is incorporated.
+- [ ] Add CLI interface for user input
+- [ ] Export amortization table to CSV or Excel
+- [ ] Add unit tests for edge cases (e.g., zero interest, single period)
